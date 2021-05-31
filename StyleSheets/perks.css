@@ -1,0 +1,101 @@
+#perks {
+  display: block;
+  margin-top: 100px;
+}
+
+#perks #perks-head {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: .04em;
+  margin-bottom: 5px;
+}
+
+#perks #perks-line-1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #585858;
+}
+
+#perks #perks-line-1 span {
+  color: black;
+  font-weight: 500;
+}
+
+#perks #perks-line-2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#perks #perks-cards {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px;
+}
+
+#perks #perks-cards .p-card {
+  width: 300px;
+  height: 200px;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.12);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 20px 20px 0 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+#perks #perks-cards .p-card .p-card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#perks #perks-cards .p-card .p-card-body .p-icon svg {
+  width: 70px;
+  height: 70px;
+  color: #635DFF;
+  margin: 0px;
+  padding: 0px;
+}
+
+#perks #perks-cards .p-card .p-card-body .p-int {
+  font-size: 16px;
+  margin: 10px;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+#perks #perks-cards .p-card .p-card-body .p-des {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 420px) {
+  #perks {
+    margin-top: 70px;
+  }
+  #perks #perks-head {
+    font-size: 14px;
+  }
+  #perks #perks-line-1 {
+    font-size: 16px;
+  }
+  #perks #perks-line-2 {
+    font-size: 16px;
+  }
+  #perks #perks-cards {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=perks.css.map */

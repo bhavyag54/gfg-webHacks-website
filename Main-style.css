@@ -1,0 +1,423 @@
+@import "./StyleSheets/about.css";
+@import "./StyleSheets/card.css";
+@import "./StyleSheets/feedback-carasual.css";
+@import "./StyleSheets/hamburger-modal.css";
+@import "./StyleSheets/modal.css";
+@import "./StyleSheets/perks.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  border: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'quicksand';
+}
+
+header {
+  border-radius: 0 0 30px 30px;
+  opacity: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  height: 18rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-height: 22rem;
+  margin-bottom: 70px;
+  background-color: #F4F4FF;
+  z-index: 1;
+}
+
+header img {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  max-width: 800px;
+  z-index: 0;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.05;
+}
+
+header #headerr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  z-index: 1;
+}
+
+header #name {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+header #name span {
+  font-weight: 400;
+}
+
+header #openLine-1 {
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: .1em;
+  padding: 20px;
+}
+
+header #openLine-1 span {
+  font-weight: 500;
+}
+
+header #openLine-2 {
+  text-align: center;
+  color: #686868;
+  font-weight: 100;
+  letter-spacing: .08em;
+  padding-top: 10px;
+  font-size: x-large;
+  margin-bottom: 2px;
+}
+
+header #openLine-3 {
+  text-align: center;
+  color: black;
+  letter-spacing: .08em;
+  font-weight: 600;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+header #button-div {
+  text-align: center;
+}
+
+header #button-div #open-button {
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 15px;
+  line-height: 1.25;
+  border-radius: 30px 0px 30px 30px;
+  background: #635DFF;
+  color: white;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: .08em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header #button-div #open-button:hover {
+  background-color: white;
+  color: #635DFF;
+}
+
+#top {
+  cursor: pointer;
+  width: 45px;
+  height: 40px;
+  font-size: 24px;
+  position: absolute;
+  border-radius: 0;
+  margin-top: -40px;
+  right: 0;
+  border-top-left-radius: 20px;
+  background-color: #635DFF;
+  color: #F4F4FF;
+}
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #3D4E60;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer img {
+  position: absolute;
+  max-width: 97vw;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  opacity: 0.05;
+}
+
+.footer #name {
+  color: #F4F4FF;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.footer #name span {
+  font-weight: 400;
+}
+
+.footer #footer-left-media {
+  margin-top: 30px;
+  margin-left: 23px;
+}
+
+.footer #footer-left-media a {
+  position: relative;
+  color: #F4F4FF;
+  margin: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer #footer-left-media a:hover {
+  color: #9793ff;
+}
+
+.footer #footer-cr {
+  color: #F4F4FF;
+  font-size: 9px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.footer #footer-right #tag {
+  color: #F4F4FF;
+  font-size: 14px;
+  margin-right: 10px;
+  position: absolute;
+  left: 65vw;
+  right: 20px;
+  text-align: justify;
+  bottom: 150px;
+}
+
+.footer #footer-right #email {
+  color: #F4F4FF;
+  position: absolute;
+  right: 150px;
+  bottom: 75px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer #footer-right input {
+  position: absolute;
+  border: none;
+  color: #F4F4FF;
+  background-color: transparent;
+  border-bottom: 1px solid #F4F4FF;
+  border-radius: 0px;
+  width: 40px;
+  right: 150px;
+  bottom: 74px;
+  padding: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.footer #footer-right input:focus {
+  outline-style: none;
+  width: 20%;
+}
+
+.footer #footer-right button {
+  cursor: pointer;
+  position: absolute;
+  color: #F4F4FF;
+  background-color: #635DFF;
+  padding: 10px 14px;
+  border-radius: 30px 0 30px 30px;
+  right: 40px;
+  font-size: 10px;
+  bottom: 70px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer #footer-right button:hover {
+  color: #635DFF;
+  background-color: #F4F4FF;
+}
+
+@media screen and (max-width: 600px) {
+  #top {
+    display: none;
+  }
+  .footer #name {
+    margin-top: 20px;
+  }
+  .footer #footer-cr {
+    position: absolute;
+    bottom: 10px;
+  }
+  .footer #footer-left-media {
+    position: absolute;
+    bottom: 215px;
+    right: 10px;
+  }
+  .footer #footer-right #tag {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    left: 20px;
+    bottom: 160px;
+  }
+  .footer #footer-right button {
+    bottom: 55px;
+    right: 50px;
+  }
+  .footer #footer-right #inputEmail {
+    left: 50px;
+    bottom: 60px;
+    width: 30%;
+  }
+  .footer #footer-right #email {
+    left: 50px;
+    bottom: 61px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #top {
+    display: none;
+  }
+  .footer #name {
+    margin-top: 20px;
+  }
+  .footer #footer-cr {
+    position: absolute;
+    bottom: 10px;
+  }
+  .footer #footer-left-media {
+    position: absolute;
+    bottom: 215px;
+    right: 10px;
+  }
+  .footer #footer-right #tag {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    left: 20px;
+    bottom: 160px;
+  }
+  .footer #footer-right button {
+    bottom: 55px;
+    right: 50px;
+  }
+  .footer #footer-right #inputEmail {
+    left: 50px;
+    bottom: 60px;
+    width: 30%;
+  }
+  .footer #footer-right #email {
+    left: 50px;
+    bottom: 61px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  header #openLine-1 {
+    font-size: 12px;
+    margin-top: 20px;
+    letter-spacing: .03em;
+  }
+  header #openLine-2 {
+    font-size: medium;
+    margin-bottom: 2px;
+  }
+  header #openLine-3 {
+    margin-bottom: 10px;
+    font-size: medium;
+  }
+  header #button-div #open-button {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  #top {
+    display: none;
+  }
+  .footer #name {
+    margin-top: 20px;
+  }
+  .footer #footer-cr {
+    position: absolute;
+    bottom: 10px;
+  }
+  .footer #footer-left-media {
+    position: absolute;
+    bottom: 215px;
+    right: 10px;
+  }
+  .footer #footer-right #tag {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    left: 20px;
+    bottom: 160px;
+  }
+  .footer #footer-right button {
+    bottom: 55px;
+    right: 50px;
+  }
+  .footer #footer-right #inputEmail {
+    left: 50px;
+    bottom: 60px;
+    width: 30%;
+  }
+  .footer #footer-right #email {
+    left: 50px;
+    bottom: 61px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  header #openLine-1 {
+    margin-top: 30px;
+    letter-spacing: .03em;
+  }
+  header #openLine-2 {
+    font-size: large;
+    margin-bottom: 2px;
+  }
+  header #openLine-3 {
+    font-size: large;
+  }
+  header #button-div #open-button {
+    font-size: 10px;
+  }
+}

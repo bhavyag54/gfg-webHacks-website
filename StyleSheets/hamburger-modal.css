@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background: #635DFF;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 20px;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.container:focus, .container:hover {
+  background: white;
+  -webkit-box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container:focus .bar1, .container:focus .bar2, .container:focus .bar3, .container:hover .bar1, .container:hover .bar2, .container:hover .bar3 {
+  background-color: #635DFF;
+}
+
+.bar1, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 5px 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.bar2 {
+  position: relative;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  margin: 5px 0px 0px 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=hamburger-modal.css.map */

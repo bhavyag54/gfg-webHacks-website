@@ -1,0 +1,117 @@
+#about {
+  margin: 150px 0px 0px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 320px;
+  width: 85%;
+  max-width: 1000px;
+  padding: 0 0 10% 5%;
+  text-align: justify;
+  background-color: #F4F4FF;
+  border-radius: 100px 0 0 0;
+}
+
+#about img {
+  width: 320px;
+  height: 400px;
+  margin-top: -80px;
+  margin-left: -30px;
+}
+
+#about span {
+  padding: 5%;
+}
+
+#about span #about-open {
+  font-size: 14px;
+  color: #5e5e5e;
+  margin-bottom: 10px;
+}
+
+#about span #about-intro {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: .04em;
+}
+
+#about span #about-des {
+  font-size: 12x;
+  text-align: justify;
+  color: #5e5e5e;
+}
+
+#about span #about-des em {
+  color: black;
+  font-weight: 500;
+}
+
+#about span #about-btn {
+  cursor: pointer;
+  margin-top: 10%;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #635dff;
+  font-size: 12px;
+  border-radius: 30px 0px 30px 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+#about span #about-btn:hover {
+  color: #ffffff;
+  background-color: #635dff;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  em {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px) {
+  #about {
+    margin-top: 50px;
+  }
+  #about em {
+    display: none;
+  }
+  #about img {
+    display: none;
+  }
+  #about span {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #about {
+    margin-top: 50px;
+  }
+  #about em {
+    display: none;
+  }
+  #about img {
+    display: none;
+  }
+  #about span {
+    margin: 30px;
+    padding: 10px;
+  }
+  #about span #about-intro {
+    font-size: 16px;
+  }
+  #about span #about-des {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=about.css.map */
