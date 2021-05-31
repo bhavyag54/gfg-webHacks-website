@@ -68,13 +68,17 @@
 }
 
 #cards .shape .card .card-body .card-header {
-  min-height: 30%;
-  font-size: larger;
+  min-height:30px;
+  font-size: medium;
+  font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: .05em;
 }
 
 #cards .shape .card .card-body .card-des {
+  
+
+
   text-align: justify;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
